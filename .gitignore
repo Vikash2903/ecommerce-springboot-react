@@ -1,0 +1,10 @@
+# Local credentials and environment files
+**/.env
+**/.env.*
+!**/.env.example
+**/application-local.properties
+
+# Build outputs and dependencies
+**/target/
+**/node_modules/
+**/dist/
