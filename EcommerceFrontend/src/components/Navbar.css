@@ -1,0 +1,415 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  background: #111111;
+
+  border-bottom: 1px solid #292929;
+
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.navbar-container {
+  width: 100%;
+  max-width: 1280px;
+  height: 70px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  flex-shrink: 0;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+/* =========================================
+   RIGHT MENU
+========================================= */
+
+.navbar-menu {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 5px;
+
+  height: 100%;
+}
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-link {
+  position: relative;
+
+  height: 40px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #cfcfcf;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 7px;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+
+  background: #242424;
+}
+
+.nav-link.active {
+  color: #ffffff;
+
+  background: #242424;
+}
+
+/* =========================================
+   ACTIVE UNDERLINE
+========================================= */
+
+.nav-link.active::after {
+  content: '';
+
+  position: absolute;
+
+  bottom: 4px;
+
+  left: 14px;
+  right: 14px;
+
+  height: 2px;
+
+  background: #ffffff;
+
+  border-radius: 10px;
+}
+
+/* =========================================
+   CART BADGE
+========================================= */
+
+.cart-badge {
+  min-width: 18px;
+  height: 18px;
+
+  margin-left: 7px;
+
+  padding: 0 5px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #0000ff;
+
+  border-radius: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================
+   USER NAME
+========================================= */
+
+.user-name {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  margin-left: 12px;
+  padding-left: 18px;
+
+  border-left: 1px solid #333333;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   LOGOUT
+========================================= */
+
+.logout-button {
+  width: 78px;
+  height: 40px;
+
+  margin-left: 5px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+
+  border: 1px solid #444444;
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background: #ffffff;
+
+  border-color: #ffffff;
+
+  color: #111111;
+}
+
+/* =========================================
+   AUTH BUTTON WRAPPER
+========================================= */
+
+.auth-buttons {
+  margin-left: 14px;
+  padding-left: 18px;
+
+  border-left: 1px solid #333333;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  height: 40px;
+}
+
+/* =========================================
+   BOTH AUTH BUTTONS
+========================================= */
+
+.auth-button {
+  width: 90px !important;
+  height: 40px !important;
+
+  min-width: 90px !important;
+  max-width: 90px !important;
+
+  min-height: 40px !important;
+  max-height: 40px !important;
+
+  padding: 0 !important;
+
+  margin: 0 !important;
+
+  box-sizing: border-box;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  border-radius: 7px;
+
+  font-family: inherit;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  line-height: 1;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login-button {
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 1px solid #444444;
+}
+
+.login-button:hover {
+  background: #ffffff;
+
+  color: #111111;
+
+  border-color: #ffffff;
+}
+
+/* =========================================
+   REGISTER
+========================================= */
+
+.register-button {
+  background: #ffffff;
+
+  color: #111111;
+
+  border: 1px solid #ffffff;
+}
+
+.register-button:hover {
+  background: #dddddd;
+
+  border-color: #dddddd;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+  .navbar {
+    height: auto;
+  }
+
+  .navbar-container {
+    height: auto;
+
+    min-height: 70px;
+
+    padding: 12px 16px;
+
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    width: 100%;
+
+    height: auto;
+
+    margin-left: 0;
+
+    padding-top: 8px;
+
+    justify-content: flex-start;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+  }
+
+  .navbar-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex-shrink: 0;
+  }
+
+  .auth-buttons {
+    flex-shrink: 0;
+
+    margin-left: auto;
+  }
+
+  .user-name {
+    display: none;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-menu {
+    gap: 2px;
+  }
+
+  .nav-link {
+    padding: 0 9px;
+
+    font-size: 12px;
+  }
+
+  .auth-button {
+    width: 76px !important;
+    min-width: 76px !important;
+    max-width: 76px !important;
+  }
+}

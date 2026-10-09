@@ -1,0 +1,262 @@
+/* ==========================================
+   ORDERS PAGE
+   ========================================== */
+
+.orders-page {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f7fb;
+}
+
+.orders-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+.orders-header {
+  margin-bottom: 30px;
+}
+
+.orders-header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #222;
+}
+
+.orders-header p {
+  margin: 0;
+  color: #666;
+}
+
+/* ==========================================
+   STATUS
+   ========================================== */
+
+.orders-status {
+  max-width: 1100px;
+  margin: 60px auto;
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+/* ==========================================
+   ERROR
+   ========================================== */
+
+.orders-error {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.orders-error h2 {
+  margin-bottom: 10px;
+}
+
+.orders-error p {
+  margin-bottom: 20px;
+  color: #d32f2f;
+}
+
+.orders-error button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.orders-error button:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   EMPTY ORDERS
+   ========================================== */
+
+.empty-orders {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 50px 30px;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.empty-orders h1 {
+  margin-bottom: 10px;
+}
+
+.empty-orders p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.empty-orders a {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ==========================================
+   ORDERS LIST
+   ========================================== */
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==========================================
+   ORDER CARD
+   ========================================== */
+
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+/* ==========================================
+   ORDER HEADER
+   ========================================== */
+
+.order-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.order-card-header h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  color: #222;
+}
+
+.order-card-header p {
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* ==========================================
+   ORDER STATUS
+   ========================================== */
+
+.order-status {
+  padding: 7px 14px;
+  border-radius: 20px;
+  background: #fff3cd;
+  color: #856404;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ==========================================
+   ORDER BODY
+   ========================================== */
+
+.order-card-body {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.order-card-body div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.order-card-body span {
+  font-size: 13px;
+  color: #777;
+}
+
+.order-card-body strong {
+  color: #222;
+  font-size: 15px;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.order-card-footer {
+  padding-top: 18px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-order-button {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.view-order-button:hover {
+  opacity: 0.9;
+}
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+  .orders-page {
+    padding: 25px 15px;
+  }
+
+  .orders-header h1 {
+    font-size: 26px;
+  }
+
+  .order-card {
+    padding: 18px;
+  }
+
+  .order-card-header {
+    flex-direction: column;
+  }
+
+  .order-card-body {
+    grid-template-columns: 1fr;
+  }
+
+  .order-card-footer {
+    justify-content: stretch;
+  }
+
+  .view-order-button {
+    width: 100%;
+    text-align: center;
+  }
+}
